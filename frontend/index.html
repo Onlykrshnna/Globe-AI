@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GlobeAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <h1>🌍 GlobeAI</h1>
+      <p>AI for BA Political Science (Demo)</p>
+    </header>
+
+    <div id="chat-container">
+      <div class="message ai">
+        <p>Hello 👋 I am <b>GlobeAI</b>.<br>
+        Ask me questions from BA Political Science syllabus.</p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Ask your question..."
+        onkeydown="handleEnter(event)"
+      />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
